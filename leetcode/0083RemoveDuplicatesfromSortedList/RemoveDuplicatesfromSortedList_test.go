@@ -19,9 +19,9 @@ type output struct {
 	*ListNode
 }
 
-func Test_mergeTwoLists(t *testing.T) {
+func TestMergeTwoLists(t *testing.T) {
 	qs := []question{
-		question{
+		{
 			input: input{
 				l1: &ListNode{
 					Val: 1,

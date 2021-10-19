@@ -23,3 +23,9 @@ jobs:
 
     - name: Test
       run: go test -v ./...
+    - name: Discord Message
+      uses: appleboy/discord-action@master
+      with:
+        webhook_id: ${{ secrets.WEBHOOK_ID }}
+        webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+        args: The ${{ github.event_name }} event triggered first step
